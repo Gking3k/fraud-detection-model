@@ -37,6 +37,10 @@ suspicious_users = {}
 # Honeypot keys
 honeypot_keys = ["honeypot1", "honeypot2", "trap_feature", "hidden_flag"]
 
+@app.route('/')
+def home():
+    return " Fraud Detection API is live. Use POST /predict to send transaction data."
+
 @app.route('/predict', methods=['POST'])
 @limiter.limit("5 per minute")  # Limit to 5 requests per minute per IP
 def predict():
@@ -96,5 +100,4 @@ def predict():
     return jsonify({'fraud_prediction': int(prediction[0])})
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
-
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
