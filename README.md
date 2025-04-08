@@ -1,8 +1,6 @@
-# Fraud Detection and Deception Model
+# A Deception Model for Combating Malicious Activities in Financial Data
 
 This is a complete fraud detection model integrated with deception techniques, built using Python and Flask. It demonstrates fraud detection using a trained XGBoost model and includes honeypot-based deception techniques for detecting malicious activity. A case study using simulated First Bank Nigeria data is also included.
-
-
 
 ##  Project Contents
 
@@ -15,8 +13,6 @@ This is a complete fraud detection model integrated with deception techniques, b
 - `test_deception_protection.py` — Script to simulate deception detection (honeypots, suspicious behavior).
 - `requirements.txt` — All project dependencies.
 - `README.md` — This instruction file.
-
-
 
 ## How to Set Up and Run the Project
 
@@ -41,8 +37,6 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-
-
 ### 3. Install Required Dependencies
 Make sure you are in the project folder and the virtual environment is activated. Then run:
 
@@ -51,8 +45,6 @@ pip install -r requirements.txt
 ```
 
 This will install Flask, XGBoost, pandas, scikit-learn, and other required libraries.
-
-
 
 ### 4. Run the Flask Application (Start the API)
 Once setup is complete, start the backend API server with:
@@ -112,8 +104,6 @@ This script tests how legitimate users are treated by the system.
 python test_deception_protection.py
 ```
 This will trigger deception techniques and show how the system reacts to suspicious behavior.
-
-
 
 ##  Case Study and Dataset
 - The model was trained on `creditcard.csv`, a real-world dataset of financial transactions (derived from kaggle).
