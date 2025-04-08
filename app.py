@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 import random
 import logging
-import os  
+import os
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
@@ -96,5 +96,7 @@ def predict():
     return jsonify({'fraud_prediction': int(prediction[0])})
 
 if __name__ == '__main__':
+    # Set up dynamic port assignment
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
