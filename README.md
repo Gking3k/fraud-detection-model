@@ -87,19 +87,22 @@ Copy and paste http://127.0.0.1:5000 into your web browser to access the API.
 # 5. Interact with the Fraud Detection System
 Once it opens you can now interact with the system using one of the test scripts.
 
-#  Test with First Bank Case Study:
+#  Test with First Bank Case Study
+In Command Prompt or Terminal Window run:
 ```bash
 python evaluate_firstbank.py
 ```
-This will send real-world styled transactions and show detected fraud.
+This test sends 3,000 transactions and shows how many were flagged as fraud.
 
-#  Simulate Normal User Requests:
+#  Simulate Normal User Requests
+In Command Prompt or Terminal Window run:
 ```bash
 python test_normal_requests.py
 ```
 This script tests how legitimate users are treated by the system.
 
-#  Simulate Deception and Honeypot Detection:
+#  Simulate Deception and Honeypot Detection
+In Command Prompt or Terminal Window run:
 ```bash
 python test_deception_protection.py
 ```
