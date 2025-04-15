@@ -1,8 +1,8 @@
-# A Deception Model for Combating Malicious Activities in Financial Data
+A Deception Model for Combating Malicious Activities in Financial Data
 
 This is a complete fraud detection model integrated with deception techniques, built using Python and Flask. It demonstrates fraud detection using a trained XGBoost model and includes honeypot-based deception techniques for detecting malicious activity. A case study using simulated First Bank Nigeria data is also included.
 
-##  Project Contents
+Project Contents
 
 - `app.py` — Main Flask API application.
 - `fraud_detection_xgboost.pkl` — Trained fraud detection model.
@@ -14,31 +14,32 @@ This is a complete fraud detection model integrated with deception techniques, b
 - `requirements.txt` — All project dependencies.
 - `README.md` — This instruction file.
 
-## How to Set Up and Run the Project
+How to Set Up and Run the Project
 
-### 1. Install Python (Version 3.10 or later)
+1. Install Python (Version 3.10 or later)
 Download and install Python from the official website:
 - https://www.python.org/downloads/
 
 > Make sure Python is added to your system PATH.
 
-### 2. Create and Activate a Virtual Environment
-This helps isolate dependencies for this project.
-
-#### For **Windows**:
+2. Create and Activate a Virtual Environment
+Open Command Prompt (Windows) or Terminal (Mac/Linux) and navigate to the folder where the project files are located.
+Then run:
+For **Windows**:
 ```bash
 python -m venv venv
 .\venv\Scripts\activate
 ```
 
-#### For **Mac/Linux**:
+For **Mac/Linux**:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install Required Dependencies
-Make sure you are in the project folder and the virtual environment is activated. Then run:
+3. Install Required Dependencies
+Make sure you are in the project folder and the virtual environment is activated. Then in the same Command Prompt or Terminal window, type
+run:
 
 ```bash
 pip install -r requirements.txt
@@ -46,8 +47,8 @@ pip install -r requirements.txt
 
 This will install Flask, XGBoost, pandas, scikit-learn, and other required libraries.
 
-### 4. Run the Flask Application (Start the API)
-Once setup is complete, start the backend API server with:
+4. Run the Flask Application (Start the API)
+Once setup is complete, start the backend API server in Command Prompt or Teminal Window with:
 
 ```bash
 python app.py
@@ -60,7 +61,7 @@ You should see a message like:
 The API is now running and ready to receive requests.
 Copy and paste http://127.0.0.1:5000 into your web browser to access the API.
 
-# If it doesn’t open:
+If it doesn’t open:
 
 -Check that your firewall or antivirus isn’t blocking Python.
 
@@ -70,16 +71,16 @@ Copy and paste http://127.0.0.1:5000 into your web browser to access the API.
 
 -If still not opening trying changing the port
 
-# To change the Flask server port from the default 5000 to something like 8000, follow these steps:
+To change the Flask server port from the default 5000 to something like 8000, follow these steps:
 
-# How to Change the Port in app.py
+How to Change the Port in app.py
 - Open your app.py file.
 
 - Locate the line where the app runs: 
 
    *app.run()
 
-# Modify it to specify the port you want: 
+Modify it to specify the port you want: 
   
   *app.run(port=8000)
 
