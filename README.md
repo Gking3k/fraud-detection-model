@@ -73,14 +73,14 @@ Copy and paste http://127.0.0.1:5000 into your web browser to access the API.
 
 # To change the Flask server port from the default 5000 to something like 8000, follow these steps:
 
-# How to Change the Port in app.py
+ How to Change the Port in app.py
 - Open your app.py file.
 
 - Locate the line where the app runs: 
 
    *app.run()
 
-# Modify it to specify the port you want: 
+ Modify it to specify the port you want: 
   
   *app.run(port=8000)
 
