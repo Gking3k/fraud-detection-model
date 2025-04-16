@@ -38,7 +38,7 @@ source venv/bin/activate
 ```
 
 # 3. Install Required Dependencies
-Make sure you are in the project folder and the virtual environment is activated. Then in the same Command Prompt or Terminal window, type
+Make sure you are in the project folder and the virtual environment is activated. Then in the same Command Prompt or Terminal window,
 run:
 
 ```bash
