@@ -36,5 +36,5 @@ deceptive_data = [
 # Send deceptive requests
 for i, payload in enumerate(deceptive_data, start=1):
     response = requests.post(url, json=payload)
-    print(f"🚨 Attempt {i}: {response.status_code} - {response.text}")
+    print(f" Attempt {i}: {response.status_code} - {response.text}")
     time.sleep(1)
