@@ -83,9 +83,46 @@ Copy and paste http://127.0.0.1:5000 into your web browser to access the API.
   
   *app.run(port=8000)
 
+# How to Test Using Swagger UI (Flasgger)
+Once the Flask app is running, go to:
+
+http://127.0.0.1:5000/apidocs
+This will open a page where you can test the API directly in your browser.
+
+# Steps to Test
+i. Click on the /predict endpoint.
+
+ii. Click the “Try it out” button.
+
+iii. In the “Request body”, paste one of the test samples.
+
+# Where to Get Sample Test Payloads:
+Use the values from these Excel files included in this project:
+
+test_normal_requests.csv	- Normal (non-fraudulent) test data
+test_deception_protection.csv - Suspicious test data with honeypot keys
+
+# Sample Payloads Format:
+Copy a row from the Excel file and paste it using commas in this format:
+
+{
+  "features": [value1, value2, value3, ..., value30]
+}
+For deception tests, also include honeypot keys:
+{
+  "features": [value1, value2, value3, ..., value30],
+  "honeypot1": 9999,
+  "honeypot2": 660295
+}
+
+# Expected Outcome
+
+"fraud_prediction": 0	- Legitimate transaction
+"fraud_prediction": 1	- Fraudulent transaction 
+403 Forbidden	- Deception or suspicious activity was detected
 
 # 5. Interact with the Fraud Detection System
-Once it opens you can now interact with the system using one of the test scripts.
+Once the flask app is running you can now interact with the system using one of the test scripts.
 
 #  Test with First Bank Case Study
 In Command Prompt or Terminal Window run:
