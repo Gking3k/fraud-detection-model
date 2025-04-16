@@ -97,10 +97,10 @@ ii. Click the “Try it out” button.
 iii. In the “Request body”, paste one of the test samples.
 
 # Where to Get Sample Test Payloads:
-Use the values from these Excel files included in this project:
+Use the values from these files included in this project:
 
-test_normal_requests.csv	- Normal (non-fraudulent) test data
-test_deception_protection.csv - Suspicious test data with honeypot keys
+test_normal_requests.py	- Normal (non-fraudulent) test data
+test_deception_protection.py - Suspicious test data with honeypot keys
 
 # Sample Payloads Format:
 Copy a row from the Excel file and paste it using commas in this format:
