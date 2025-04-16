@@ -108,7 +108,9 @@ Copy a row from the Excel file and paste it using commas in this format:
 {
   "features": [value1, value2, value3, ..., value30]
 }
+
 For deception tests, also include honeypot keys:
+
 {
   "features": [value1, value2, value3, ..., value30],
   "honeypot1": 9999,
@@ -118,7 +120,9 @@ For deception tests, also include honeypot keys:
 # Expected Outcome
 
 "fraud_prediction": 0	- Legitimate transaction
+
 "fraud_prediction": 1	- Fraudulent transaction 
+
 403 Forbidden	- Deception or suspicious activity was detected
 
 # 5. Interact with the Fraud Detection System
